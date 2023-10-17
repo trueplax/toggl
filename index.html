@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSV zu ICS Konverter</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div id="container">
-        <input type="file" id="upload" accept=".csv" />
-        <button id="convert">Konvertieren</button>
-        <a id="download" style="display:none">Download ICS</a>
+    <div class="container">
+        <h1>CSV zu ICS Konverter</h1>
+        <div class="input-section">
+            <input type="file" id="upload" class="upload" accept=".csv" />
+        </div>
+        <button id="convert" class="btn convert">Konvertieren</button>
+        <a id="download" style="display: none;">Download</a>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
