@@ -1,29 +1,53 @@
-#container {
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #181818; /* Dunkelgrauer Hintergrund */
+    color: #ffffff; /* Weißer Text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    gap: 20px; /* Abstand zwischen den Elementen */
 }
 
-#upload {
-    margin-bottom: 20px;
+h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
 }
 
-#convert {
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+.upload {
     padding: 10px 20px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
+    border: 2px solid #4A90E2; /* Blauer Rand */
+    background-color: transparent;
+    color: #fff; /* Weißer Text */
+    border-radius: 30px; /* Abgerundete Ecken */
+    outline: none;
+    cursor: pointer;
 }
 
-#convert:hover {
-    background-color: white;
-    color: black;
+.btn {
+    padding: 10px 30px;
+    background-color: #4A90E2; /* Blauer Hintergrund */
+    border: none;
+    border-radius: 30px; /* Abgerundete Ecken */
+    cursor: pointer;
+    color: #fff; /* Weißer Text */
+    font-size: 18px;
+    transition: 0.3s; /* Animation beim Überfahren */
+}
+
+.btn:hover {
+    background-color: #357ABD; /* Dunkleres Blau beim Überfahren */
 }
